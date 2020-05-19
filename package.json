@@ -1,0 +1,14 @@
+{
+  "name": "img compression",
+  "version": "1.0.0",
+  "description": "img compression",
+  "devDependencies": {
+    "grunt": "^1.1.0",
+    "grunt-contrib-imagemin": "^4.0.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-newer": "^1.1.0"
+  },
+  "dependencies": {
+    "imagemin-mozjpeg": "^8.0.0"
+  }
+}
