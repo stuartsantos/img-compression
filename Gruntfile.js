@@ -14,7 +14,7 @@ grunt.initConfig({
             files: [{
                 expand: true,
                 cwd: 'src/',
-                src: ['**/*.{png,jpg,gif}'],
+                src: ['**/*.{png,jpg,gif,jpeg,svg}'],
                 dest: 'dist/'
             }]
         }
