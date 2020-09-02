@@ -5,9 +5,11 @@ grunt.initConfig({
     imagemin: {
         static: {
             options: {
-                optimizationLevel: 3,
+                optimizationLevel: 7,
                 svgoPlugins: [{removeViewBox: false}],
-                use: [mozjpeg()] // Example plugin usage
+            },
+            files: {
+                'dist/images/profile-small.jpg': 'src/images/profile-small.jpg',
             }
         },
         dynamic: {
