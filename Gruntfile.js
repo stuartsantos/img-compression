@@ -3,14 +3,10 @@ const mozjpeg = require('imagemin-mozjpeg');
 module.exports = function(grunt) {
 grunt.initConfig({
     imagemin: {
-        static: {
-            options: {
-                optimizationLevel: 7,
-                svgoPlugins: [{removeViewBox: false}],
-            },
-            files: {
-                'dist/images/profile-small.jpg': 'src/images/profile-small.jpg',
-            }
+        options: {
+            optimizationLevel: 7,
+            svgoPlugins: [{removeViewBox: false}],
+            mozjpeg: [{quality: 50}]
         },
         dynamic: {
             files: [{
